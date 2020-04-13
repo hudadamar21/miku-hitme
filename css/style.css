@@ -32,17 +32,19 @@ h3 {
     cursor: url(../img/hammer-hit2.png) 35 30, auto;
 }
 
-.container .main {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .title {
     background: white;
     border-radius: 5px;
 }
+
+.container .main {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
 
 .ground {
     width: 200px;
